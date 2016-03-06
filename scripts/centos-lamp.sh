@@ -31,6 +31,11 @@ service sqld start
 mysql -u root -e "SHOW DATABASES";
 
 # Download starter content
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/knightz007/vagrant/master/files/index.html
+
+sudo -u vagrant wget -q https://raw.githubusercontent.com/knightz007/vagrant/master/files/info.php
+
 
 service httpd restart
 
